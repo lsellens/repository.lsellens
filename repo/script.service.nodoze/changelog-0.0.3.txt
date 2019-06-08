@@ -1,0 +1,8 @@
+0.0.3
+- Removed netstat dependency
+
+0.0.2
+- made ports configurable
+
+0.0.1
+- initial version
