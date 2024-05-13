@@ -1,3 +1,6 @@
+0.0.4
+- Omega compatibility fixes
+
 0.0.3
 - Removed netstat dependency
 

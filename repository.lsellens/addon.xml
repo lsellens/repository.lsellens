@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.lsellens"
-       name="lsellens kodi addon repository"
-       version="1.0.7"
-       provider-name="lsellens">
-  <extension point="xbmc.addon.repository"
-             name="lsellens kodi addon repository">
-    <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master</datadir>
+<addon id="repository.lsellens" name="lsellens kodi addon repository" version="1.0.8" provider-name="lsellens">
+  <extension point="xbmc.addon.repository" name="lsellens kodi addon repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master</datadir>
+      <hashes>false</hashes>
+    </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Repository for Kodi addons by lsellens</summary>
-    <description lang="en">Repository for various addons by lsellens</description>
+    <summary lang="en_US">Repository for Kodi addons by lsellens</summary>
+    <description lang="en_US">Repository for various addons by lsellens</description>
     <platform>all</platform>
     <assets>
       <icon>resources/icon.png</icon>
