@@ -1,102 +1,15 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="service.downloadmanager.transmission" name="transmission" version="8.0.5" provider-name="lsellens">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="script.service.nodoze" name="nodoze" version="0.0.4" provider-name="lsellens">
   <requires>
-    <import addon="xbmc.addon" version="14.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="default.py">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>transmission: a fast, easy and free BitTorrent client</summary>
-    <description>transmission is a fast, easy and free BitTorrent client</description>
-    <platform>linux</platform>
-    <news>8.0.5 - Transmission 4.0.5</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon><addon id="metadata.scraper.moviesetartwork" name="Movie Set Artwork Scraper" version="0.0.5" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="14.0.0" />
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="xbmc.json" version="7.0.0" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Movie Set Artwork Scraper</summary>
-    <description lang="en">This addon will scrape set artwork from TheMovieDB.org.</description>
-    <disclaimer lang="en">This product uses the TMDb API but is not endorsed or certified by TMDb.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-    <source>https://github.com/lsellens/metadata.scraper.moviesetartwork</source>
-    <news>0.0.5 - python 3 compatibility</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon><addon id="repository.lsellens" name="lsellens kodi addon repository" version="1.0.8" provider-name="lsellens">
-  <extension point="xbmc.addon.repository" name="lsellens kodi addon repository">
-    <dir>
-      <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master</datadir>
-      <hashes>false</hashes>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_US">Repository for Kodi addons by lsellens</summary>
-    <description lang="en_US">Repository for various addons by lsellens</description>
-    <platform>all</platform>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon><addon id="script.module.transmissionrpc" name="transmissionrpc" version="0.0.3" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="12.0.0" />
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.six" version="1.1.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>python transmission-rpc module</summary>
-    <description>This is a module for python transmission-rpc</description>
-    <platform>linux</platform>
-    <license>MIT License</license>
-    <news>0.0.3 - update files to version 7.0.5, python3 compatibility</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon><addon id="script.nfs-server" name="nfs-server" version="0.0.2" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="14.0.0" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Addon to manage NFS kernel server</summary>
-    <description>Addon to create and edit NFS kernel server exports file.</description>
-    <platform>linux</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-    <source>https://github.com/lsellens/script.nfs-server</source>
-    <news>0.0.2 - python 3 compatibility</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon><addon id="script.service.nodoze" name="nodoze" version="0.0.4" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="14.0.0" />
+    <import addon="xbmc.addon" version="14.0.0"/>
   </requires>
   <extension point="xbmc.service" library="service.py">
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">nodoze is a script to keep a server from sleeping while connections are established on configured ports.</summary>
     <description lang="en">nodoze is a script to keep a server from sleeping while connections are established on configured ports.</description>
+    <language>en</language>
     <platform>linux</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/script.service.nodoze</source>
@@ -105,4 +18,36 @@
       <icon>resources/icon.png</icon>
     </assets>
   </extension>
-</addon></addons>
+</addon>
+
+<addon id="repository.lsellens" name="lsellens kodi addon repository" version="1.0.9" provider-name="lsellens">
+  <extension point="xbmc.addon.repository" name="lsellens kodi addon repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir maxversion="18.9">
+      <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/leia/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/leia/</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir minversion="19.0">
+      <info compressed="false">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/matrix/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/lsellens/repository.lsellens/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/lsellens/repository.lsellens/master/matrix/</datadir>
+      <hashes>false</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Repository for Kodi addons by lsellens</summary>
+    <description lang="en">Repository for various addons by lsellens</description>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+</addons>

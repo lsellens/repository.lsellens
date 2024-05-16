@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="script.service.nfs-ganesha" name="nfs-ganesha" version="0.0.3" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">nfs-ganesha: a user-space nfsv4 daemon</summary>
+    <description lang="en">nfs-ganesha is a user-mode file server for NFSv4.</description>
+    <language>en</language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.service.nfs-ganesha</source>
+    <news>0.0.3 - nfs-ganesha-2.5.2</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.distutils" name="distutils" version="0.0.1" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>python distutils module</summary>
+    <description>This is a module for python distutils</description>
+    <platform>linux</platform>
+    <news>0.0.1 - inital release</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.transmissionrpc" name="transmissionrpc" version="0.0.2" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.six" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>python transmission-rpc module</summary>
+    <description>This is a module for python transmission-rpc</description>
+    <platform>linux</platform>
+    <license>MIT License</license>
+    <news>0.0.2 - update files to version 2.0.4</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.service.rpi.tv.switch" name="rpi.tv.switch" version="0.0.1" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="14.0.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.RPi.GPIO" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">rpi tv switch.</summary>
+    <description lang="en">rpi tv switch.</description>
+    <language>en</language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.service.rpi.tv.switch</source>
+    <news>0.0.1 - initial version</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="metadata.scraper.moviesetartwork" name="Movie Set Artwork Scraper" version="0.0.5" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="14.0.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="xbmc.json" version="7.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Movie Set Artwork Scraper</summary>
+    <description lang="en">This addon will scrape set artwork from TheMovieDB.org.</description>
+    <disclaimer lang="en">This product uses the TMDb API but is not endorsed or certified by TMDb.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/metadata.scraper.moviesetartwork</source>
+    <news>0.0.5 - add better logging, and error handling</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.RPi.GPIO" name="RPi.GPIO" version="0.0.4" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="14.0.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>python RPi.GPIO</summary>
+    <description>This module contains the RPi python GPIO Lib</description>
+    <platform>linux</platform>
+    <news>0.0.4- RPi.GPIO - 0.6.3</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="service.downloadmanager.transmission" name="transmission" version="8.0.5" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">transmission: a fast, easy and free BitTorrent client</summary>
+    <description lang="en">transmission is a fast, easy and free BitTorrent client</description>
+    <platform>linux</platform>
+    <news>8.0.5 - Transmission 4.0.5</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.nfs-server" name="nfs-server" version="0.0.1" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon to manage NFS kernel server</summary>
+    <description lang="en">Addon to create and edit NFS kernel server exports file.</description>
+    <language>en</language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.nfs-server</source>
+    <news>0.0.1 - Inital addon</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+</addons>

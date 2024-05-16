@@ -8,6 +8,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">nodoze is a script to keep a server from sleeping while connections are established on configured ports.</summary>
     <description lang="en">nodoze is a script to keep a server from sleeping while connections are established on configured ports.</description>
+    <language>en</language>
     <platform>linux</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/script.service.nodoze</source>
