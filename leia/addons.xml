@@ -20,23 +20,6 @@
   </extension>
 </addon>
 
-<addon id="script.module.distutils" name="distutils" version="0.0.1" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>python distutils module</summary>
-    <description>This is a module for python distutils</description>
-    <platform>linux</platform>
-    <news>0.0.1 - inital release</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="script.module.transmissionrpc" name="transmissionrpc" version="0.0.2" provider-name="lsellens">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -56,29 +39,7 @@
   </extension>
 </addon>
 
-<addon id="script.service.rpi.tv.switch" name="rpi.tv.switch" version="0.0.1" provider-name="lsellens">
-  <requires>
-    <import addon="xbmc.addon" version="14.0.0"/>
-    <import addon="xbmc.python" version="2.19.0"/>
-    <import addon="script.module.RPi.GPIO" version="0.0.1"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">rpi tv switch.</summary>
-    <description lang="en">rpi tv switch.</description>
-    <language>en</language>
-    <platform>linux</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-    <source>https://github.com/lsellens/script.service.rpi.tv.switch</source>
-    <news>0.0.1 - initial version</news>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="metadata.scraper.moviesetartwork" name="Movie Set Artwork Scraper" version="0.0.5" provider-name="lsellens">
+<addon id="metadata.scraper.moviesetartwork" name="Movie Set Artwork Scraper" version="0.0.6" provider-name="lsellens">
   <requires>
     <import addon="xbmc.addon" version="14.0.0"/>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -95,7 +56,7 @@
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/metadata.scraper.moviesetartwork</source>
-    <news>0.0.5 - add better logging, and error handling</news>
+    <news>0.0.6 - Use bearer token for auth, some minor bug fixes</news>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
@@ -113,6 +74,23 @@
     <description>This module contains the RPi python GPIO Lib</description>
     <platform>linux</platform>
     <news>0.0.4- RPi.GPIO - 0.6.3</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.distutils" name="distutils" version="0.0.1" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>python distutils module</summary>
+    <description>This is a module for python distutils</description>
+    <platform>linux</platform>
+    <news>0.0.1 - inital release</news>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
@@ -151,6 +129,28 @@
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     <source>https://github.com/lsellens/script.nfs-server</source>
     <news>0.0.1 - Inital addon</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.service.rpi.tv.switch" name="rpi.tv.switch" version="0.0.1" provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.addon" version="14.0.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.RPi.GPIO" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">rpi tv switch.</summary>
+    <description lang="en">rpi tv switch.</description>
+    <language>en</language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.service.rpi.tv.switch</source>
+    <news>0.0.1 - initial version</news>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
